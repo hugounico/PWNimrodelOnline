@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js" integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="assets/img/n2.ico">
+    <title>PWNimrodel2</title>
+
+  </head>
+  <body>
+ 
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/img/n.png" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a id="np" class="nav-link active" aria-current="page" href="#">Nuestros Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="mostrarFormularioA()" class="nav-link" id="mostrarContenedorA" href="#contenedorA">Comuniquemosnos</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="mostrarFormularioB()" class="nav-link" id="mostrarContenedorB" href="#contenedorB">Reserva</a>
+            </li>
+        </div>
+
+      </div>
+    </nav>
+
+    <h1>Nimrodel Pub Restaurant</h1>
+    <h3>Destacados de la semana</h3>
+
+    <div class="card-group d-flex flex-wrap align-items-cente h-100">
+
+        <div class="card text-center border-light mb-3 mx-4 col-md-8" id="imagen11">
+          <img src="assets/img/bebidas.jpg" class="card-img-top card-img-height" alt="...">
+           <div class="card-body">
+           <h5 class="card-title">GASEOSAS</h5>
+           <p class="card-text">Refresca tu paladar con nuestras gaseosas heladas y deliciosas. ¡Ven y pruébalas en nuestro restaurante hoy!</p>
+           </div>
+         </div>
+
+        <div class="card text-center border-light mb-3 mx-4 col-md-8" id="imagen12">
+          <img src="assets/img/tablas.jpg" class="card-img-top card-img-height" alt="...">
+           <div class="card-body">
+           <h5 class="card-title">TABLAS</h5>
+           <p class="card-text">Comparte momentos deliciosos con nuestras tablas para compartir. ¡Ven y disfruta hoy!</p>
+           </div>
+        </div>
+
+        <div class="card text-center border-light mb-3 mx-4 col-md-8" id="imagen13">
+          <img src="assets/img/shop.jpeg" class="card-img-top card-img-height" alt="...">
+           <div class="card-body">
+           <h5 class="card-title">SHOP CERVEZA</h5>
+           <p class="card-text">Disfruta nuestros Shops premium. ¡Visítanos y brinda por una experiencia inolvidable!</p>
+           </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor text-center d-none d-lg-block" id="contenedorA">
+      <h1 class="titulointerno">Comuniquemosnos</h1>
+  <form class="row g-3">
+    <div class="col-md-12">
+      <label for="inputnombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="inputnombre">
+    </div>
+    <div class="col-md-12">
+      <label for="inputEmail4" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-12">
+      <label for="inputtelefono" class="form-label">Telefono</label>
+      <input type="number" class="form-control" id="inputtelefono">
+    </div>
+    <div class="col-md-12">
+      <label for="inputmotivo" class="form-label">Motivo</label>
+      <input type="text" class="form-control" id="inputmotivo">
+    </div>
+    <div class="col-md-12">
+      <label for="inputcomentario" class="form-label"></label>
+      <textarea type="text" class="form-control" id="inputcomentario" rows="7"></textarea>
+    </div>
+     <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+    </div>
+
+    <div class="contenedor2 text-center d-none d-lg-block" id="contenedorB">
+      <h1 class="titulointerno">Reserva</h1>
+      <form class="row g-3">
+        <div class="col-md-12">
+          <label for="inputnombre2" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputnombre2">
+        </div>
+        <div class="col-md-12">
+          <label for="inputEmail42" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="inputEmail42">
+        </div>
+        <div class="col-md-12">
+          <label for="inputtelefono2" class="form-label">Telefono</label>
+          <input type="number" class="form-control" id="inputtelefono2">
+        </div>
+        <div class="col-md-12">
+          <label for="inputfecha" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="inputfecha">
+        </div>
+        <div class="col-md-12">
+          <label for="inputhora" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="inputhora">
+        </div>
+        <div class="col-md-12">
+          <label for="inputcantidadAsist" class="form-label">Cantidad de asistentes</label>
+          <input type="number" class="form-control" id="inputcantidadAsist">
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Reservar</button>
+        </div>
+      </form>
+        </div>
+
+    <div class="d-none d-lg-block"><img src="assets/img/vino.jpg" class="img-fluid" alt="..."></div>
+    <div class="d-lg-none"><img src="assets/img/mojito.jpg" class="img-fluid" alt="..."></div>
+
+    <div class="card-footer text-center" >
+      Todos los derechos reservados
+    <img src="assets/img/R2blco.webp" class="rounded" alt="" height="auto" width="10px">
+    </div>
+    
+    <script src="assets/js/logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

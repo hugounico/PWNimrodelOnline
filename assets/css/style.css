@@ -1,0 +1,116 @@
+.navbar{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+#np{
+    color:white
+}
+.navbar-brand img{
+    width: 10%;
+}
+.custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-link3{
+    color:gray
+}
+.navbar-brand, .nav-link{
+    color:gray
+}
+h1 {text-align: center;
+    color: gray;
+    font-size: 47px;
+    margin-top: 2%;
+}
+h3 {text-align: center;
+    text-decoration-line: overline;
+    margin-top: 10%;
+    font-size: 42px;
+}
+.card-footer{
+    background-color: black;
+    color: white;
+    padding: 8%;
+}
+.card-group {
+    margin-top: 10%;
+}
+.card-img-height {
+    height: 275px;
+}
+  
+@media (max-width: 991.98px) {
+    .card-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+.contenedor, .contenedor2{
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    background-color: rgb(103, 103, 103);
+    opacity: 0.7;
+    padding: 4%;
+    color: black;
+    border-radius: 2%;
+    color: white;
+}
+.titulointerno{
+    margin-bottom: 5%;
+    color: white;
+}
+#inputcomentario{
+    margin: auto;
+    width: 80%;
+}
+
+/* para la ventana modal */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+}
+  
+.modal img {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+  
+.modal h5 {
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin: 0%;
+}
+  
+.modal p {
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    margin: 0%;
+}
+
+.modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
