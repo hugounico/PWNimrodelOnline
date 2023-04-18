@@ -156,6 +156,43 @@ $(document).ready(function() {
   });
 });
 
+function mostrartarjetas() {
+  // Obtener la ventana modal
+  var modal = document.getElementById("modalTarjetas2");
+  var modal2 = document.getElementById("modalTarjetas3");
+  // Obtener las tarjetas ocultas
+  //var tarjeta1 = document.getElementById("imagen14");
+  //var tarjeta2 = document.getElementById("imagen15");
+
+  // Mostrar la ventana modal
+  modal.style.display = "block";
+
+  //tarjeta1.style.display = "block";
+
+  // Agregar evento clic a la flecha derecha
+  var nextBtn = modal.querySelector(".next");
+  nextBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+    modal2.style.display = "block";
+  });
+
+  // Agregar evento clic a la flecha izquierda
+  var prevBtn = modal.querySelector(".prev");
+  prevBtn.addEventListener("click", function() {
+    modal.style.display = "block";
+    modal2.style.display = "none";
+  });
+
+  // Mostrar la ventana modal
+  //modal3.style.display = "block";
+
+  // Agregar un evento al botón de cerrar
+  var cerrar = document.getElementsByClassName("close")[0];
+  cerrar.onclick = function() {
+    modal3.style.display = "none";
+  }
+}
+
 
 //var form2 = document.querySelector('.contenedor2'); // selec el formulario. TAMBN PUEDE ESCRIBIR form.addEventListener('submit', function(event)
 //form2.addEventListener('submit', (event) => { // añade un evento de escucha para cuando se envía el formulario
